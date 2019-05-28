@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@893373282:1524593651529" name="VerticalSelection" version="6.0.1">
+<element height="46" id="Element@1866574397:1524593651529" name="VerticalSelection" type="Page Entry" width="137" x="27" y="12">
+<exit_states>
+<exit_state name="next" target="Element@751642681:1524593723436"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1359727913:1524593723436" name="MenuVerticalSelection" src="com.audium.server.voiceElement.menu.MFoundation5OptionMenu" type="Voice Element" width="168" x="12" y="264">
+<exit_states>
+<exit_state name="option1" target="Element@327584843:1524593723436"/>
+<exit_state name="option2" target="Element@1573546064:1524593723436">
+<bendpoint>
+<dim1 x="167" y="-50"/>
+<dim2 x="-118" y="34"/>
+</bendpoint>
+</exit_state>
+<exit_state name="option3" target="Element@377167766:1524593723436"/>
+<exit_state name="option4" target="Element@1500101723:1524593723436"/>
+<exit_state name="option5" target="Element@1834400865:1524593723436"/>
+<exit_state name="max_nomatch" target="Element@751642681:1524593723436">
+<bendpoint>
+<dim1 x="82" y="-118"/>
+<dim2 x="82" y="50"/>
+</bendpoint>
+</exit_state>
+<exit_state name="max_noinput" target="Element@751642681:1524593723436">
+<bendpoint>
+<dim1 x="-78" y="-116"/>
+<dim2 x="-78" y="52"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+<element height="46" id="Element@1500101723:1524593723436" name="City" type="Page Connector" width="91" x="278" y="348">
+<page_connector target="Element@580064243:1499943343787">City<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@1573546064:1524593723436" name="Health" type="Page Connector" width="91" x="278" y="180">
+<page_connector target="Element@295779766:1500685615038">Health<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@327584843:1524593723436" name="Travel" type="Page Connector" width="91" x="276" y="96">
+<page_connector target="Element@894801573:1500682681048">Travel<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@751642681:1524593723436" name="PlayWrongSelection" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="156" x="18" y="96">
+<exit_states>
+<exit_state name="done" target="Element@1359727913:1524593723436"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1834400865:1524593723436" name="Utility" type="Page Connector" width="91" x="278" y="432">
+<page_connector target="Element@464105076:1499943371334">Utility<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@377167766:1524593723436" name="Finance" type="Page Connector" width="91" x="278" y="264">
+<page_connector target="Element@712822727:1499943317427">Finance<config/>
+</page_connector>
+</element>
+</page>

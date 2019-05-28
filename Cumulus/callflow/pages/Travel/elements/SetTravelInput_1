@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@975045218:1500683769222" name="SetTravelInput_1" version="6.0.1">
+<config>
+<settings>
+<setting name="maintainer"/>
+<setting name="language"/>
+<setting name="encoding"/>
+<setting name="default_audio_path"/>
+<setting name="remove_session_data"/>
+</settings>
+<session_data>
+<data create_when="After" name="caller_input">Last Minute Deals</data>
+<data create_when="After" name="company_name">Cumulus Travel</data>
+</session_data>
+</config>
+</action_element>

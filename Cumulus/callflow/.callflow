@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<callflow id="Callflow@15668733:1359560352727" version="6.0.1">
+<page closed="false" id="Page@13115650:1359560352727">Start</page>
+<page closed="false" id="Page@1709203983:1499939848560">ContextService</page>
+<page closed="false" id="Page@445246563:1504013780038">VerticalConfig</page>
+<page closed="false" id="Page@1479106301:1545433811597">Welcome</page>
+<page closed="false" id="Page@893373282:1524593651529">VerticalSelection</page>
+<page closed="false" id="Page@1318272643:1499943126974">Travel</page>
+<page closed="false" id="Page@1414469806:1499943161505">Health</page>
+<page closed="false" id="Page@621531105:1499943317427">Finance</page>
+<page closed="false" id="Page@405714324:1499943343787">City</page>
+<page closed="false" id="Page@1882637482:1499943371334">Utility</page>
+<page closed="false" id="Page@18505553:1453682477870">ToAgent</page>
+</callflow>

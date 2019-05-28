@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<action_element id="Element@1064671043:1504014922603" name="Parse_Vertical_Config" version="6.0.1">
+<config>
+<settings>
+<setting name="company_name">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.name");
+String(ret);</setting>
+<setting name="welcome_prompt">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.welcomePrompt");
+String(ret);</setting>
+<setting name="mm_tts">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.mainMenu.tts");
+String(ret);</setting>
+<setting name="mm_option1">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.mainMenu.options[0].name");
+String(ret);</setting>
+<setting name="mm_option2">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.mainMenu.options[1].name");
+String(ret);</setting>
+<setting name="mm_option3">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.mainMenu.options[2].name");
+String(ret);</setting>
+<setting name="mm_option1_data">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.mainMenu.options[0].description");
+String(ret);</setting>
+<setting name="mm_option2_data">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.mainMenu.options[1].description");
+String(ret);</setting>
+<setting name="mm_option3_data">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.mainMenu.options[2].description");
+String(ret);</setting>
+<setting name="sm_tts">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.secondMenu.tts");
+String(ret);</setting>
+<setting name="sm_option1">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.secondMenu.options[0].name");
+String(ret);</setting>
+<setting name="sm_option2">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.secondMenu.options[1].name");
+String(ret);</setting>
+<setting name="sm_option3">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.secondMenu.options[2].name");
+String(ret);</setting>
+<setting name="sm_option1_data">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.secondMenu.options[0].description");
+String(ret);</setting>
+<setting name="sm_option2_data">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.secondMenu.options[1].description");
+String(ret);</setting>
+<setting name="sm_option3_data">importPackage(com.audium.server.cvpUtil);
+var inputJSON = {Data.Session.get_vertical_config}
+var ret= JSONPathUtil.eval(inputJSON, "$.cvp.secondMenu.options[2].description");
+String(ret);</setting>
+</settings>
+<session_data>
+<data create_when="After" name="company_name">{LocalVar.company_name}</data>
+</session_data>
+</config>
+</action_element>

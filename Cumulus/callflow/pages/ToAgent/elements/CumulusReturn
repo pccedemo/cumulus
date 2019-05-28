@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<subdialog_return id="Element@1448465873:1500682728204" name="CumulusReturn" version="6.0.1">
+<config>
+<settings>
+<setting name="caller_input">{Data.Session.caller_input}</setting>
+<setting name="FromExtVXML0">{Data.Session.first_name} {Data.Session.last_name}</setting>
+<setting name="FromExtVXML1">{Data.Session.caller_second_input}</setting>
+<setting name="FromExtVXML2">{Data.Session.vertical_id}</setting>
+<setting name="FromExtVXML3">{Data.Element.PODAdd.pod_id}</setting>
+</settings>
+</config>
+</subdialog_return>

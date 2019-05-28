@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<page id="Page@1709203983:1499939848560" name="ContextService" version="6.0.1">
+<element height="46" id="Element@1850080009:1499939848560" name="ContextService" type="Page Entry" width="128" x="32" y="12">
+<exit_states>
+<exit_state name="next" target="Element@1859508547:1499940001139"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1859508547:1499940001139" name="Customer_Lookup" src="com.audium.server.action.contextservice.CustomerLookUpAction" type="Action Element" width="161" x="15" y="96">
+<exit_states>
+<exit_state name="done" target="Element@430634638:1499940001139"/>
+<exit_state name="Java Exception-Any" target="Element@1514498278:1558571436403"/>
+</exit_states>
+</element>
+<element height="46" id="Element@430634638:1499940001139" name="CheckCustomerCount" type="Decision" width="168" x="12" y="180">
+<exit_states>
+<exit_state name="found" target="Element@118282424:1541622423319"/>
+<exit_state name="notfound" target="Element@1514498278:1558571436403"/>
+</exit_states>
+</element>
+<element height="46" id="Element@2130816196:1500042310653" name="PlayNoCustomerFound" skipped="true" src="com.audium.server.voiceElement.audio.MAudio" type="Voice Element" width="174" x="285" y="180">
+<exit_states>
+<exit_state name="done" target="Element@146640914:1500223478600"/>
+</exit_states>
+</element>
+<element height="46" id="Element@146640914:1500223478600" name="SetFakeCustomer" src="com.audium.server.action.context.ApplicationModifier" type="Action Element" width="142" x="301" y="264">
+<exit_states>
+<exit_state name="done" target="Element@1788634613:1541622307915"/>
+</exit_states>
+</element>
+<element height="46" id="Element@1788634613:1541622307915" name="VerticalConfig" type="Page Connector" width="137" x="303" y="348">
+<page_connector target="Element@1425958193:1504013780038">VerticalConfig<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@118282424:1541622423319" name="VerticalConfig" type="Page Connector" width="125" x="33" y="264">
+<page_connector target="Element@1425958193:1504013780038">VerticalConfig<config/>
+</page_connector>
+</element>
+<element height="46" id="Element@1514498278:1558571436403" name="dCloud_Customer_Lookup" src="com.audium.server.action.rest.client.RestClientAction" type="Action Element" width="191" x="276" y="96">
+<exit_states>
+<exit_state name="done" target="Element@1788634613:1541622307915">
+<bendpoint>
+<dim1 x="198" y="0"/>
+<dim2 x="198" y="-252"/>
+</bendpoint>
+<bendpoint>
+<dim1 x="198" y="251"/>
+<dim2 x="198" y="-1"/>
+</bendpoint>
+</exit_state>
+<exit_state name="Java Exception-Any" target="Element@146640914:1500223478600">
+<bendpoint>
+<dim1 x="179" y="85"/>
+<dim2 x="178" y="-83"/>
+</bendpoint>
+</exit_state>
+</exit_states>
+</element>
+</page>
